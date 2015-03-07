@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\lilli.js</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../prettify.css">
+
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">src\lilli.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">81.4% <small>(70 / 86)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">63.08% <small>(41 / 65)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">87.5% <small>(7 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">81.4% <small>(70 / 86)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">src/</a> &#187; lilli.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">34</span>
+<span class="cline-any cline-yes">83</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">108</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">22</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">72</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64</span>
+<span class="cline-any cline-yes">36</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">28</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-yes">69</span>
+<span class="cline-any cline-yes">69</span>
+<span class="cline-any cline-yes">51</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">69</span>
+<span class="cline-any cline-yes">69</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">108</span>
+<span class="cline-any cline-yes">108</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">18</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @author Sven Koelpin
+ **/
+window.Lilly = (function (w, d, jsf, undefined) {
+    "use strict";
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (jsf === undefined) {
+<span class="cstat-no" title="statement not covered" >        throw "JSF needs to be loaded before lilli";</span>
+    }
+    var oldRequestFn = jsf.ajax.request;
+    var executeOptions, executeSource;
+&nbsp;
+    var arrayContains = function (array, value) {
+        for (var i = 0, length = array.length; i &lt; length; i++) {
+            if (value === array[i]) {
+                return true;
+            }
+        }
+        return false;
+    };
+&nbsp;
+    //override the request function
+    jsf.ajax.request = <span class="fstat-no" title="function not covered" >function (source, event, options) {</span>
+        //temporarily store the execute-options
+        //to use them in the getViewState-function
+<span class="cstat-no" title="statement not covered" >        setExecuteOptions(options.execute);</span>
+<span class="cstat-no" title="statement not covered" >        setExecuteSrc(source);</span>
+        //call the old request function. this method will call
+        //the getViewState-function
+<span class="cstat-no" title="statement not covered" >        oldRequestFn(source, event, options);</span>
+    };
+&nbsp;
+    //override the getViewState-function. We actually use the
+    //default mojarra-implementation and just enhance it by a few lines
+    //to just submit the values that are set in the options.execute-string
+    //!!!most of this code it just copied from the default mojarra jsf.js!!!!
+    jsf.getViewState = function (form) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!form) {
+<span class="cstat-no" title="statement not covered" >            throw new Error("jsf.getViewState:  form must be set");</span>
+        }
+        var els = form.elements;
+        var len = els.length;
+        var qString = [];
+&nbsp;
+        var formElementMap = {};
+        var executeIds, executeForm, executeNone, executeAll, i, length;
+&nbsp;
+        for (i = 0; i &lt; len; i++) {
+            formElementMap[els[i].name] = true;
+        }
+        //check if the execute-attribute was set
+        if (executeOptions) {
+            executeIds = executeOptions.split(/[ ]+/);
+            //workaround for execute @this
+            executeIds.push(executeSource.name);
+            executeNone = executeOptions.search(/@none/) &gt;= 0;
+            executeAll = executeOptions.search(/@all/) &gt;= 0;
+            executeForm = executeOptions.search(/@form/) &gt;= 0 || arrayContains(executeIds, form.name);
+            if (!executeAll &amp;&amp; !executeForm) {
+                //check if the execute-ids are form elements or keywords. if not, fallback to jsfs' default behaviour
+                //since searching for all child elements is a performance drawback
+                for (i = 0, length = executeIds.length; i &lt; length; i++) {
+                    if (executeIds[i] !== "@this" &amp;&amp; executeIds[i] !== "@none" &amp;&amp; !formElementMap[executeIds[i]]) {
+                        executeForm = true;
+                        break;
+                    }
+&nbsp;
+                }
+            }
+        }
+        //if not, check if the eventsource is sth other than a formelement (e.g. a div or span)
+        //if so, we need to fall back to jsfs' default behavior and submit the whole form
+        else {
+            if (!arrayContains(els, executeSource)) {
+                executeForm = true;
+            }
+        }
+        //this method checks whether the given element-name is part of the "execute" property of the ajax request
+        var isFieldExecutable = function (name) {
+            //the ViewState-value is always submitted
+            if (name === "javax.faces.ViewState") {
+                return true;
+            }
+            //submit nothing if execute @none is set
+            if (executeNone) {
+                return false;
+            }
+            //submit all values if @all or @form is set as execute option
+            if (executeAll || executeForm) {
+                return true;
+            }
+            //form-name is always submitted (if execute @none is not set)
+            if (name === form.name) {
+                return true;
+            }
+&nbsp;
+            //no execute string was set
+            if (!executeIds) {
+                return false;
+            }
+&nbsp;
+            //check whether the given element-name was set in the "execute" section of the ajax request
+            return arrayContains(executeIds, name);
+        };
+        var addField = function (name, value) {
+            //check if the element is part of the "execute"-option before adding it to the request string
+            var fieldExecutable = isFieldExecutable(name);
+            if (fieldExecutable) {
+                var tmpStr = "";
+                if (qString.length &gt; 0) {
+                    tmpStr = "&amp;";
+                }
+                tmpStr += encodeURIComponent(name) + "=" + encodeURIComponent(value);
+                qString.push(tmpStr);
+            }
+        };
+        for (i = 0; i &lt; len; i++) {
+            var el = els[i];
+            if (el.name === "") {
+                continue;
+            }
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (!el.disabled) {
+                switch (el.type) {
+<span class="branch-0 cbranch-no" title="branch not covered" >                    case "button":</span>
+<span class="branch-1 cbranch-no" title="branch not covered" >                    case "submit":</span>
+<span class="branch-2 cbranch-no" title="branch not covered" >                    case "reset":</span>
+<span class="branch-3 cbranch-no" title="branch not covered" >                    case "image":</span>
+<span class="branch-4 cbranch-no" title="branch not covered" >                    case "file":</span>
+<span class="cstat-no" title="statement not covered" >                        break;</span>
+<span class="branch-5 cbranch-no" title="branch not covered" >                    case "select-one":</span>
+<span class="cstat-no" title="statement not covered" >                        if (el.selectedIndex &gt;= 0) {</span>
+<span class="cstat-no" title="statement not covered" >                            addField(el.name, el.options[el.selectedIndex].value);</span>
+                        }
+<span class="cstat-no" title="statement not covered" >                        break;</span>
+<span class="branch-6 cbranch-no" title="branch not covered" >                    case "select-multiple":</span>
+<span class="cstat-no" title="statement not covered" >                        for (var j = 0; j &lt; el.options.length; j++) {</span>
+<span class="cstat-no" title="statement not covered" >                            if (el.options[j].selected) {</span>
+<span class="cstat-no" title="statement not covered" >                                addField(el.name, el.options[j].value);</span>
+                            }
+                        }
+<span class="cstat-no" title="statement not covered" >                        break;</span>
+<span class="branch-7 cbranch-no" title="branch not covered" >                    case "checkbox":</span>
+<span class="branch-8 cbranch-no" title="branch not covered" >                    case "radio":</span>
+<span class="cstat-no" title="statement not covered" >                        if (el.checked) {</span>
+<span class="cstat-no" title="statement not covered" >                            addField(el.name, el.value || "on");</span>
+                        }
+<span class="cstat-no" title="statement not covered" >                        break;</span>
+                    default:
+                        var nodeName = el.nodeName.toLowerCase();
+                        <span class="missing-if-branch" title="else path not taken" >E</span>if (nodeName === "input" || <span class="branch-1 cbranch-no" title="branch not covered" >nodeName === "select" </span>||
+<span class="branch-2 cbranch-no" title="branch not covered" >                            nodeName === "object" </span>|| <span class="branch-3 cbranch-no" title="branch not covered" >nodeName === "textarea")</span> {
+                            addField(el.name, el.value);
+                        }
+                        break;
+                }
+            }
+        }
+        //reset the options
+        executeOptions = null;
+        executeSource = null;
+        return qString.join("");
+    };
+&nbsp;
+&nbsp;
+    var setExecuteOptions = function (opts) {
+        executeOptions = opts;
+    };
+    var setExecuteSrc = function (src) {
+        executeSource = src;
+    };
+&nbsp;
+    //this is needed to make lilly testable..
+    return{
+        _setExecuteOptions: setExecuteOptions,
+        _setExecuteSrc: setExecuteSrc
+    };
+}(window, window.document, window.jsf));</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Mar 07 2015 22:41:48 GMT+0100 (Mitteleuropäische Zeit)</div>
+</div>
+
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+
+<script src="../sorter.js"></script>
+</body>
+</html>
