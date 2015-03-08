@@ -8,6 +8,6 @@ Add lilly.min.js after jsf.js to optimize jsfs' ajax requests, e.g.:
 
 < h:outputScript name="jsf.js" library="javax.faces" target="body"/>  
 
-<!—- patch is added AFTER the jsf.js library! -->
+< !—- patch is added AFTER the jsf.js library! -->
 
-< h:outputScript name="lilli.js" library="scripts" target="body"/> 
+< h:outputScript name="lilli.min.js" library="scripts" target="body"/> 
